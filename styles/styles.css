@@ -1,38 +1,40 @@
 body {
-  background-color: black;
-  margin: 0;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-h1, h2, h3, h4, h5 {
-  color: white;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-weight: bold;
-  margin: 0;
+  background-color: rgba(0, 0, 0, 0.874);
+  font-family:'Courier New', Courier, monospace;
 }
 
 p {
   color: white;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-weight: normal;
+  font-weight: bold;
   margin: 0;
 }
 
 .hero {
-  color: white;
-  background: black;
+  font-family: 'Courier New', Courier, monospace;
+  font-style:inherit;
+  color: black;
+  background: white;
   text-align: center;
   padding: 60px 20px;
 }
 
 .hero p {
-  font-size: 36px;
+  color:black;
+  margin-top: 30px;
+  font-weight: normal;
+  font-size: 27px;
+
+}
+
+.hero h1 {
+  font-weight: bold;
+  font-size: 35px;
 }
 
 .hero h2 {
   font-weight: normal;
-  line-height: 2;
-  font-size: 24px;
+  line-height: 2px;
+  font-size: 27px;
 }
 
 .emoji {
@@ -44,9 +46,9 @@ p {
 }
 
 .btn-branding {
-  background: white;
-  border-radius: 4px;
-  color: black;
+  background: black;
+  border-radius: 7px;
+  color: white;
   font-size: 18px;
   line-height: 27px;
   padding: 15px 30px;
@@ -56,7 +58,7 @@ p {
 
 .carousel-container {
   width: 80%; 
-  max-width: 600px; 
+  max-width: 900px; 
   margin: 0 auto; 
   padding: 20px 0; 
 }
@@ -68,29 +70,36 @@ p {
   object-fit: cover; 
 }
 
-.carousel-caption-below {
+.carousel-caption-right {
   text-align: center;
-  padding: 10px 0;
+  padding: 20px;
 }
 
-.carousel-caption-below h5, .carousel-caption-below p {
+.carousel-caption-right h5, .carousel-caption-right p {
   color: white; 
+  font-size: 27px;
+  text-align: center;
+  padding: 20px;
 }
 
+.carousel-caption-right h5 {
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 36px;
+}
+.footer {
+  text-align: center;
+  justify-content: space-around;
+  background-color: white;
+  color:black;
+  font-size: 15px;
+}
 @media (max-width: 900px) {
   h1 {
       font-size: 18px;
       text-align: center;
   }
 
-  .footer {
-      display: none;
-  }
-}
+  
 
-@media (min-width: 900px) {
-  h1 {
-      font-size: 36px;
-      text-align: left;
-  }
 }
