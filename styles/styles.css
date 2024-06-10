@@ -1,17 +1,17 @@
 body {
-  background-color: rgba(0, 0, 0, 0.874);
-  font-family:'Courier New', Courier, monospace;
+  background-color: white;
+  font-family: 'Courier New', Courier, monospace;
+  color: black;
+
 }
 
 p {
-  color: white;
-  font-weight: bold;
-  margin: 0;
+  font-size: 20px;
+  margin-top: 20px;
 }
 
 .hero {
-  font-family: 'Courier New', Courier, monospace;
-  font-style:inherit;
+  font-style: inherit;
   color: black;
   background: white;
   text-align: center;
@@ -19,11 +19,10 @@ p {
 }
 
 .hero p {
-  color:black;
+  color: black;
   margin-top: 30px;
   font-weight: normal;
-  font-size: 27px;
-
+  font-size: 22px;
 }
 
 .hero h1 {
@@ -34,7 +33,7 @@ p {
 .hero h2 {
   font-weight: normal;
   line-height: 2px;
-  font-size: 27px;
+  font-size: 22px;
 }
 
 .emoji {
@@ -42,10 +41,10 @@ p {
   justify-content: center;
   align-items: center;
   margin: 20px 0;
-  font-size: 64px; 
+  font-size: 64px;
 }
 
-.btn-branding {
+.btn-branding, .button {
   background: black;
   border-radius: 7px;
   color: white;
@@ -54,20 +53,23 @@ p {
   padding: 15px 30px;
   border: none;
   cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
 }
 
 .carousel-container {
-  width: 80%; 
-  max-width: 900px; 
-  margin: 0 auto; 
-  padding: 20px 0; 
+  width: 80%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 0;
 }
 
 .carousel-item img {
-  width: 100%; 
+  width: 100%;
   height: auto;
-  max-height: 400px; 
-  object-fit: cover; 
+  max-height: 400px;
+  object-fit: cover;
 }
 
 .carousel-caption-right {
@@ -76,8 +78,8 @@ p {
 }
 
 .carousel-caption-right h5, .carousel-caption-right p {
-  color: white; 
-  font-size: 27px;
+  color: black;
+  font-size: 22px;
   text-align: center;
   padding: 20px;
 }
@@ -87,19 +89,35 @@ p {
   font-weight: bold;
   font-size: 36px;
 }
-.footer {
-  text-align: center;
-  justify-content: space-around;
-  background-color: white;
-  color:black;
-  font-size: 15px;
+
+
+.about-section {
+  margin-top: 50px;
+  color: black;
+  background: white;
+  padding: 60px 20px;
 }
+
+.about-section h1 {
+  font-weight: bold;
+}
+
+.about-section h2 {
+  font-size: 22px;
+}
+
+.content-container {
+  flex:1;
+}
+
+.content-container {
+margin: auto;
+}
+
 @media (max-width: 900px) {
-  h1 {
-      font-size: 18px;
-      text-align: center;
+  .about-section {
+    text-align: center;
   }
 
   
-
 }
